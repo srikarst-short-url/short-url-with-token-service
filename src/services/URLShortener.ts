@@ -1,6 +1,5 @@
 import { scrypt } from "crypto";
 import { promisify } from "util";
-import { createClient } from "redis";
 
 var asyncClientGet = promisify(scrypt);
 
