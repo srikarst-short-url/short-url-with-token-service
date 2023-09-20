@@ -3,11 +3,13 @@ import mongoose from "mongoose";
 interface LongToShortDoc extends mongoose.Document {
   shortURL: string;
   longURL: string;
+  server: string;
 }
 
 interface LongToShortAttrs {
   shortURL: string;
   longURL: string;
+  server: string;
 }
 
 interface LongToShortModel extends mongoose.Model<LongToShortDoc> {
@@ -21,6 +23,10 @@ const longToShortSchema = new mongoose.Schema(
       required: true,
     },
     longURL: {
+      type: String,
+      required: true,
+    },
+    server: {
       type: String,
       required: true,
     },

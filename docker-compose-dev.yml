@@ -8,5 +8,5 @@ services:
     ports:
       - "3001:3001"
     volumes:
-      - /home/node/short-url-service/node_modules
-      - .:/home/node/short-url-service:cached
+      - /home/node/short-url-with-token-service/node_modules
+      - .:/home/node/short-url-with-token-service:cached

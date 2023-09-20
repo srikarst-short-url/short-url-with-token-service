@@ -11,8 +11,12 @@ router.post("/api/long-to-short", async (req: Request, res: Response) => {
   //   if (existing) {
   //     throw new Error("URL already shortened");
   //   }
-  const shortURL = await URLShortener.convertToShort(longURL);
-  const processed = LongToShort.build({ longURL, shortURL });
+  const shortURL = await URLShortener.convertToShort();
+  const processed = LongToShort.build({
+    longURL,
+    shortURL,
+    server: await (await fetch("http://api.ipify.org/")).text(),
+  });
   await processed.save();
 
   res.status(200).send(processed);

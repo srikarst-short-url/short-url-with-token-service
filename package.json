@@ -1,5 +1,5 @@
 {
-  "name": "short-url-token-service",
+  "name": "short-url-with-token-service",
   "version": "1.0.0",
   "description": "URL shortener with Token service",
   "main": "index.js",
@@ -21,7 +21,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/srikarst/short-url-token-service.git"
+    "url": "git+https://github.com/srikarst/short-url-with-token-service.git"
   },
   "keywords": [
     "project-auth"
@@ -29,9 +29,9 @@
   "author": "srikarsuri@gmail.com",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/srikarst/short-url-token-service/issues"
+    "url": "https://github.com/srikarst/short-url-with-token-service/issues"
   },
-  "homepage": "https://github.com/srikarst/short-url-token-service.git",
+  "homepage": "https://github.com/srikarst/short-url-with-token-service.git",
   "dependencies": {
     "@types/express": "^4.17.17",
     "@types/mongoose": "^5.11.97",
